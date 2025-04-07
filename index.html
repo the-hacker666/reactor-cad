@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reactor CAD</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Reactor CAD</h1>
+  
+  <form id="reportForm">
+    <input type="text" id="reportType" placeholder="Type" required />
+    <input type="text" id="reportLocation" placeholder="Location" required />
+    <textarea id="reportDescription" placeholder="Description" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <table id="reportsTable">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Location</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- ✅ Firebase SDK's laden -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  
+
+
+  <!-- ✅ Je eigen script onderaan -->
+  <script src="app.js"></script>
+</body>
+</html>
